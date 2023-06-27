@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./Assets/fav.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ABC News</title>
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" >
+                <img src="./Assets/logo.png" alt="logo" class="logo-img">
+            </a>
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="nav-items hover-link">Politics</li>
+                    <li class="nav-items hover-link">Cricket</li>
+                    <li class="nav-items hover-link">Finance</li>
+                    <li class="nav-items hover-link">Entertainment</li>
+                </ul>
+            </div>
+
+            <div class="search-bar flex">
+                <input type="text" placeholder="e.g. Live updates" class="news-input">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container" >
+         
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title" >This is the title</h3>
+                <h6 class="news-source" id="news-source">End ajmeti sala mara oo</h6>
+                <p class="news-descr" id="news-descr">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat odio voluptate ab culpa dolor amet exercitationem modi illo consequatur eligendi.</p>
+            </div>
+         </div>
+    </template> 
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
