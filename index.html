@@ -10,22 +10,22 @@
 <body>
     <nav>
         <div class="main-nav container flex">
-            <a href="#" >
+            <a href="#" onclick="reload()">
                 <img src="./Assets/logo.png" alt="logo" class="logo-img">
             </a>
 
             <div class="nav-links">
                 <ul class="flex">
-                    <li class="nav-items hover-link">Politics</li>
-                    <li class="nav-items hover-link">Cricket</li>
-                    <li class="nav-items hover-link">Finance</li>
-                    <li class="nav-items hover-link">Entertainment</li>
+                    <li class="nav-items hover-link" id="politics" onclick="onNavTabClick('politics')" >Politics</li>
+                    <li class="nav-items hover-link" id="cricket" onclick="onNavTabClick('cricket')">Cricket</li>
+                    <li class="nav-items hover-link" id="finance" onclick="onNavTabClick('finance')">Finance</li>
+                    <li class="nav-items hover-link" id="entertainment" onclick="onNavTabClick('entertainment')">Entertainment</li>
                 </ul>
             </div>
 
             <div class="search-bar flex">
-                <input type="text" placeholder="e.g. Live updates" class="news-input">
-                <button class="search-button">Search</button>
+                <input id="search-item" type="text" placeholder="e.g. Live updates" class="news-input">
+                <button id="search-button" class="search-button">Search</button>
             </div>
         </div>
     </nav>

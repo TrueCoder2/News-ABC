@@ -83,6 +83,10 @@ nav{
     color: red;
 }
 
+.nav-links:active{
+    color: var(--acent-color);
+}
+
 .search-bar{
     height: 32px;
     gap: 8px;
