@@ -11,7 +11,8 @@ async function fetchNews (query) {
     const response = await fetch(`${url}${query}&apiKey=${API_KEY}`);
     const data = await response.json();
     console.log(data);
-    bindData(data.articles);
+    let articles = data.articles;
+    bindData(articles);
      }
 
 
@@ -21,7 +22,7 @@ async function fetchNews (query) {
 
         cardsContainer.innerHTML = "";
 
-        articles.map(article => {
+       articles.map(article => {
             if (!article.urlToImage) return;
             const cardClone = newsCardTemplate.content.cloneNode(true);
             fillDataInCard(cardClone, article);
